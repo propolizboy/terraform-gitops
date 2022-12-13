@@ -6,11 +6,12 @@ terraform {
         }
     }
     cloud {
-        organization = "Ruj-DevOps-Training"
-        workspaces {
-          name ="devops-infra"
-        }
+    organization = "Ruj-DevOps-Training"
+
+    workspaces {
+      name = "devops-infra"
     }
+  }
 }
 provider "aws" {
     region = "ap-southeast-1"
