@@ -1,11 +1,12 @@
 terraform {
-    required_providers{
-        aws = {
-            source = "hashicorp/aws"
-            version = "4.29.0"
-        }
+
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "4.29.0"
     }
-    cloud {
+  }
+  cloud {
     organization = "Ruj-DevOps-Training"
 
     workspaces {
@@ -13,6 +14,7 @@ terraform {
     }
   }
 }
+
 provider "aws" {
-    region = "ap-southeast-1"
+  region = "ap-southeast-1"
 }
